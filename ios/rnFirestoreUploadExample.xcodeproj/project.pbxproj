@@ -19,6 +19,7 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* rnFirestoreUploadExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* rnFirestoreUploadExampleTests.m */; };
 		6F618B1BCE1D91EF3CD86A6D /* libPods-rnFirestoreUploadExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B8CD38EB3BA71DB5AF0F11 /* libPods-rnFirestoreUploadExampleTests.a */; };
+		8533AE60237DB0C2005AE68B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8533AE5F237DB0C2005AE68B /* GoogleService-Info.plist */; };
 		BD2629FBF9F6B3DFC00B4FD8 /* libPods-rnFirestoreUploadExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CEC575DC33258EC62B5223 /* libPods-rnFirestoreUploadExample.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		3E1520B2D9A5B8B4D1EFE4B6 /* Pods-rnFirestoreUploadExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnFirestoreUploadExampleTests.release.xcconfig"; path = "Target Support Files/Pods-rnFirestoreUploadExampleTests/Pods-rnFirestoreUploadExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		73B8CD38EB3BA71DB5AF0F11 /* libPods-rnFirestoreUploadExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnFirestoreUploadExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		848B6F577A2ABA1226EEB482 /* Pods-rnFirestoreUploadExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnFirestoreUploadExample.release.xcconfig"; path = "Target Support Files/Pods-rnFirestoreUploadExample/Pods-rnFirestoreUploadExample.release.xcconfig"; sourceTree = "<group>"; };
+		8533AE5F237DB0C2005AE68B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9EB4CC831C95A8D6B0119A34 /* Pods-rnFirestoreUploadExample-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnFirestoreUploadExample-tvOS.release.xcconfig"; path = "Target Support Files/Pods-rnFirestoreUploadExample-tvOS/Pods-rnFirestoreUploadExample-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		A3B87C6CCC1A31563C21BBF8 /* Pods-rnFirestoreUploadExample-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnFirestoreUploadExample-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-rnFirestoreUploadExample-tvOS/Pods-rnFirestoreUploadExample-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AF71BC5EFDB747B20B080409 /* libPods-rnFirestoreUploadExample-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnFirestoreUploadExample-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 		13B07FAE1A68108700A75B9A /* rnFirestoreUploadExample */ = {
 			isa = PBXGroup;
 			children = (
+				8533AE5F237DB0C2005AE68B /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -194,7 +197,6 @@
 				D0F3C69BEBB8DAE30694C7CE /* Pods-rnFirestoreUploadExampleTests.debug.xcconfig */,
 				3E1520B2D9A5B8B4D1EFE4B6 /* Pods-rnFirestoreUploadExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -230,6 +232,7 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				2C63B9AE8C14229B93AC9267 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -308,6 +311,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -338,6 +342,7 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				8533AE60237DB0C2005AE68B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +377,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		2C63B9AE8C14229B93AC9267 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rnFirestoreUploadExample/Pods-rnFirestoreUploadExample-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC-C++/gRPCCertificates-Cpp.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Cpp.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rnFirestoreUploadExample/Pods-rnFirestoreUploadExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
